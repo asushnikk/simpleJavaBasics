@@ -12,7 +12,7 @@ public class Main {
         employee2.getStationeries().add(new Pen(22, 8));
         employee2.getStationeries().add(new Pencil(2, 82));
 
-        System.out.println(String.format("cost of employee1 is %s", employee1.Sum()));
-        System.out.println(String.format("cost of employee2 is %s", employee2.Sum()));
+        System.out.println(String.format("cost of employee1 is %s", SumUtil.Sum(employee1.getStationeries())));
+        System.out.println(String.format("cost of employee2 is %s", SumUtil.Sum(employee2.getStationeries())));
     }
 }
