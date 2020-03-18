@@ -1,14 +1,11 @@
 package task4;
 
 import lombok.Getter;
-import lombok.Setter;
 
 public class Animal {
 
-    @Setter
     @Getter
     private String name;
-    @Setter
     @Getter
     private int weight;
 

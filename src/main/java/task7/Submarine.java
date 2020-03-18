@@ -1,12 +1,15 @@
 package task7;
 
+import lombok.Data;
+
 @SubmarineInformation(weight = 1488, color = "gayColor")
+@Data
 public class Submarine {
 
     private Engine engine;
     private boolean engineWorkStatus;
 
-    private class Engine {
+    public class Engine {
 
         @WorkStatus(engineWorkStatus = true)
         public void engineStart() {
