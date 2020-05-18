@@ -1,4 +1,4 @@
-package generics;
+package task5;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,16 +22,9 @@ public class Main {
         groupHistory.addStudent(student4);
         groupHistory.addStudent(student3);
 
-        student1.addMark(groupEnglish, 11.1);
-        student2.addMark(groupEnglish, 12.2);
-        student3.addMark(groupEnglish, 13.2);
+        MarkUtils.addMark(groupEnglish, 11.1, student1);
+        MarkUtils.addMark(groupEnglish, 12.2, student2);
+        MarkUtils.addMark(groupEnglish, 13.2, student3);
 
-        student1.addMark(groupRussian, 9);
-        student3.addMark(groupRussian, 4);
-        student2.addMark(groupRussian, 4);
-
-        student1.addMark(groupHistory, 6);
-        student4.addMark(groupHistory, 3);
-        student3.addMark(groupHistory, 8);
     }
 }

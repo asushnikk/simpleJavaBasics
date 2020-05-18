@@ -1,4 +1,4 @@
-package generics;
+package task5;
 
 public enum Discipline {
 

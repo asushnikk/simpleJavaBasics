@@ -1,17 +1,16 @@
-package generics;
+package task5;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class Group {
 
-    private Discipline subject;
-    private Set<Student> group = new HashSet<>();
+    private final Discipline subject;
+    private final Set<Student> group = new HashSet<>();
 
     public Group(Discipline subject) {
         this.subject = subject;
     }
-
 
     public Discipline getSubject() {
         return subject;
